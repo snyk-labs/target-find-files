@@ -2,10 +2,8 @@
     "targets": [
         {
             "target": {
-                "fork": false,
                 "name": "slice-import",
-                "owner": "mrzarquon",
-                "branch": "main"
+                "owner": "mrzarquon"
             },
             "integrationId": "fe9e5717-f6fb-4308-aa25-adbd776e2852",
             "orgId": "1b48e2c4-6ca8-455f-a73f-d2f6f2a6b225"

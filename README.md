@@ -8,6 +8,8 @@ This works in conjunction with [snyk-api-import](https://github.com/snyk-tech-se
 
 - Checkout this repository
 - Modify `target-template.json` to contain the details specific to your organizations settings for the integration you want to generate projects for, the provided template is for GitHub(+Enterpise), BitBucket Cloud, and Azure Repos. The integration ID and org ID values are in their settings pages.
+- For the Target information, the format is pulling the data of owner (repo owner or org) and name (repo name), so https://github.com/mrzarquon/slice-import is `"name": "slice-import"` and `"owner": "mrzarquon"`.
+- If you want to monitor a none default branch, add `"branch": "branchname"` to the template
 - Checkout the target repository into this folder or just use the slice-import target that exists here already as a practice folder
 - Run the command, specifying the target (the repo name) and the project files to be imported, use --print to just output to screen instead of saving a file:
 
@@ -22,10 +24,8 @@ This works in conjunction with [snyk-api-import](https://github.com/snyk-tech-se
   "targets": [
     {
       "target": {
-        "fork": false,
         "name": "slice-import",
-        "owner": "mrzarquon",
-        "branch": "main"
+        "owner": "mrzarquon"
       },
       "integrationId": "fe9e5717-f6fb-4308-aa25-adbd776e2852",
       "orgId": "1b48e2c4-6ca8-455f-a73f-d2f6f2a6b225",
