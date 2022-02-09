@@ -11,6 +11,7 @@ This works in conjunction with [snyk-api-import](https://github.com/snyk-tech-se
 - For the Target information, the format is pulling the data of owner (repo owner or org) and name (repo name), so https://github.com/mrzarquon/slice-import is `"name": "slice-import"` and `"owner": "mrzarquon"`.
 - If you want to monitor a none default branch, add `"branch": "branchname"` to the template
 - Checkout the target repository into this folder or just use the slice-import target that exists here already as a practice folder
+- It is reccomended you perform a shallow clone via `git clone --depth 1` instead of a full one.
 - Run the command, specifying the target (the repo name) and the project files to be imported, use --print to just output to screen instead of saving a file:
 
 ```shell
